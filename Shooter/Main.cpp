@@ -1,4 +1,4 @@
-
+ï»¿
 #include<iostream>
 #include<windows.h>
 #include<conio.h>
@@ -27,7 +27,7 @@ void main()
 #ifdef LUCKY_TICKET
 
     int ticket_num, count1 = 0;
-    cout << "Ââåäèòå íîìåð áèëåòà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð°: ";
     cin >> ticket_num;
     int num = ticket_num;
     while (num)
@@ -35,7 +35,7 @@ void main()
         num /= 10;
         count1++;
     }
-    cout << "Êîëè÷åñòâî öèôð â íîìåðå áèëåòà: " << count1 << endl;
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ†Ð¸Ñ„Ñ€ Ð² Ð½Ð¾Ð¼ÐµÑ€Ðµ Ð±Ð¸Ð»ÐµÑ‚Ð°: " << count1 << endl;
 
     int i = count1 / 2;
     int left_side = 0, right_side = 0, count;
@@ -47,8 +47,8 @@ void main()
     {
         right_side += ticket_num % 10; ticket_num /= 10;
     }
-    if (left_side == right_side) cout << "Ó Âàñ ñ÷àñòëèâûé áèëåò!!!" << endl;
-    else { cout << "Ó âàñ îáû÷íûé áèëåò." << endl; }
+    if (left_side == right_side) cout << "Ð£ Ð’Ð°Ñ ÑÑ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚!!!" << endl;
+    else { cout << "Ð£ Ð²Ð°Ñ Ð¾Ð±Ñ‹Ñ‡Ð½Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚." << endl; }
 
 #endif LUCKY_TICKET
 
@@ -56,23 +56,23 @@ void main()
 
     double number1, number2;
     char oper;
-    cout << "Ââåäèòå âûðàæåíèå: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
     cin >> number1 >> oper >> number2;
     if (oper == '+')
     {
-        cout << "Âûðàæåíèå: " << number1 << " + " << number2 << " = " << number1 + number2 << endl;
+        cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " + " << number2 << " = " << number1 + number2 << endl;
     }
     else if (oper == '-')
     {
-        cout << "Âûðàæåíèå: " << number1 << " - " << number2 << " = " << number1 - number2 << endl;
+        cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " - " << number2 << " = " << number1 - number2 << endl;
     }
     else if (oper == '/')
     {
-        cout << "Âûðàæåíèå: " << number1 << " / " << number2 << " = " << number1 / number2 << endl;
+        cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " / " << number2 << " = " << number1 / number2 << endl;
     }
     else if (oper == '*')
     {
-        cout << "Âûðàæåíèå: " << number1 << " * " << number2 << " = " << number1 * number2 << endl;
+        cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " * " << number2 << " = " << number1 * number2 << endl;
     }
 
 #endif CALC_IF
@@ -81,14 +81,14 @@ void main()
 
     double number1, number2;
     char oper;
-    cout << "Ââåäèòå âûðàæåíèå: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
     cin >> number1 >> oper >> number2;
     switch (oper)
     {
-    case '-': cout << "Âûðàæåíèå: " << number1 << " - " << number2 << " = " << number1 - number2 << endl; break;
-    case '+': cout << "Âûðàæåíèå: " << number1 << " + " << number2 << " = " << number1 + number2 << endl; break;
-    case '*': cout << "Âûðàæåíèå: " << number1 << " * " << number2 << " = " << number1 * number2 << endl; break;
-    case '/': cout << "Âûðàæåíèå: " << number1 << " / " << number2 << " = " << number1 / number2 << endl; break;
+    case '-': cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " - " << number2 << " = " << number1 - number2 << endl; break;
+    case '+': cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " + " << number2 << " = " << number1 + number2 << endl; break;
+    case '*': cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " * " << number2 << " = " << number1 * number2 << endl; break;
+    case '/': cout << "Ð’Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: " << number1 << " / " << number2 << " = " << number1 / number2 << endl; break;
     }
 
 #endif CALC_SWITCH
@@ -96,7 +96,7 @@ void main()
 #ifdef TICKET
 
     int tic_num, a, b, c, d, e, f;
-    cout << "Ââåäèòå íîìåð áèëåòà: " << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð°: " << endl;
     cin >> tic_num;
     a = tic_num / 100000;
     b = tic_num % 1000000 / 100000;
@@ -106,9 +106,9 @@ void main()
     e = tic_num % 100 / 10;
     f = tic_num % 10;
     if (a + b + c == d + e + f)
-        cout << "Áèëåò ñ÷àñòëèâûé!!!" << endl;
+        cout << "Ð‘Ð¸Ð»ÐµÑ‚ ÑÑ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹!!!" << endl;
     else
-        cout << "Îáû÷íûé áèëåò." << endl;
+        cout << "ÐžÐ±Ñ‹Ñ‡Ð½Ñ‹Ð¹ Ð±Ð¸Ð»ÐµÑ‚." << endl;
 
 #endif TICKET
 
@@ -232,10 +232,10 @@ void main()
 
     setlocale(LC_ALL, "Rus");
     int num, degree;
-    cout << "Ââåäèòå ÷èñëî, âîçâîäèìîå â ñòåïåíü: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾, Ð²Ð¾Ð·Ð²Ð¾Ð´Ð¸Ð¼Ð¾Ðµ Ð² ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: ";
     cin >> num;
     long result = num;
-    cout << "Ââåäèòå ñòåïåíü ÷èñëà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ Ñ‡Ð¸ÑÐ»Ð°: ";
     cin >> degree;
     for (int i = 0; i < degree; i++)
     {
@@ -245,14 +245,14 @@ void main()
         }
         else result = result / num;
     }
-    cout << "Ðåçóëüòàò âû÷èñëåíèÿ: " << result << endl;
+    cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð¸Ñ: " << result << endl;
 
 #endif // DEGREE
 
 #ifdef FACTORIAL
     int n;
     double f = 1;  // Factorial
-    cout << "Ââåäèòå ÷èñëî: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
@@ -263,11 +263,11 @@ void main()
 #endif // FACTORIAL
 
 #ifdef DEGREE
-    double a; // Îñíîâàíèå ñòåïåíè, óìíîæàåìîå íà ñåáÿ.
-    int n; // Ïîêàçàòåëü ñòåïåíè.
+    double a; // ÐžÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸, ÑƒÐ¼Ð½Ð¾Ð¶Ð°ÐµÐ¼Ð¾Ðµ Ð½Ð° ÑÐµÐ±Ñ.
+    int n; // ÐŸÐ¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸.
     double N = 1;
-    cout << "Ââåäèòå îñíîâàíèå ñòåïåíè: "; cin >> a;
-    cout << "Ââåäèòå ïîêàçàòåëü ñòåïåíè: "; cin >> n;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> a;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> n;
     if (n < 0)
     {
         a = 1 / a;
@@ -281,7 +281,7 @@ void main()
 #endif // DEGREE
 
 #ifdef ASCII
-    cout << "Òàáëèöà ASCII ñèìâîëîâ: " << endl;
+    cout << "Ð¢Ð°Ð±Ð»Ð¸Ñ†Ð° ASCII ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¾Ð²: " << endl;
     for (int i = 0; i < 256; i++)
     {
         if (i % 16 == 0) cout << endl;
@@ -292,7 +292,7 @@ void main()
 
 #ifdef FIBONACHI_2
     int n;
-    cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî: "; cin >> n;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n;
     for (int a = 0, b = 1, c = a + b; a < n; a = b, b = c, c = a + b)
     {
         cout << a;
@@ -303,10 +303,10 @@ void main()
 #ifdef SIMPLE_NUMBERS
 
     int n;
-    cout << "Ââåäèòå ïðåäåëüíîå ÷èñëî: "; cin >> n;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€ÐµÐ´ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n;
     for (int i = 0; i < n; i++)
     {
-        bool simple = true; //Ïðåäïîëîãàåì, ÷òî ÷èñëî ïðîñòîå, íî ïðîâåðÿåì:
+        bool simple = true; //ÐŸÑ€ÐµÐ´Ð¿Ð¾Ð»Ð¾Ð³Ð°ÐµÐ¼, Ñ‡Ñ‚Ð¾ Ñ‡Ð¸ÑÐ»Ð¾ Ð¿Ñ€Ð¾ÑÑ‚Ð¾Ðµ, Ð½Ð¾ Ð¿Ñ€Ð¾Ð²ÐµÑ€ÑÐµÐ¼:
         for (int j = 2; j < i; j++) 
         {
             if (i % j == 0)
